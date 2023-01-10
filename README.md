@@ -9,5 +9,5 @@ This repository will provide you with the data required to build a dashboard con
 
 - "Excel_from_S3.py", is a DAG designed to be run in Apache Airflow that fetches relevenet OECD data from an excel workbook stored in an S3 bucket.
 - "CPI_Web_Scrape.py", is a DAG that makes use of the IMF API to scrape CPI data, clean the data and input each countries CPI data as a table in Amazon RDS. 
-
 - In order to run Excel_from_S3.py and CPI_Web_Scrape.py simply create a folder named "dags" whithin your airflow file and add these DAGs to the "airflow/dags" folder. 
+- "DL_DW.ipynb", is a colab notebook that was developed to extract data from the world bank using the world bank API. The code is used to extract data on development indicators for all the countries.
